@@ -1,1 +1,5 @@
-// Your JavaScript goes here.
+a (".inputs").keyup(function () {
+    if (this.value.length == this.maxLength) {
+      $(this).next('.inputs').focus();
+    }
+ });
